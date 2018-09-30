@@ -1,10 +1,12 @@
 package menutestiterator;
 
-public class Camarero {
-    McDonaldsMenu macdonaldsMenu;
-    TelepizzaMenu telepizzaMenu;
+import java.util.Iterator;
 
-    public Camarero(McDonaldsMenu macdonaldsMenu, TelepizzaMenu telepizzaMenu) {
+public class Camarero {
+    Menu macdonaldsMenu;
+    Menu telepizzaMenu;
+
+    public Camarero(Menu macdonaldsMenu, Menu telepizzaMenu) {
         this.macdonaldsMenu = macdonaldsMenu;
         this.telepizzaMenu = telepizzaMenu;
     }

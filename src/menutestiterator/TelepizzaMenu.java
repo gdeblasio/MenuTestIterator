@@ -1,6 +1,6 @@
 package menutestiterator;
 
-public class TelepizzaMenu {
+public class TelepizzaMenu implements Menu {
     static final int MAX_ITEMS = 2;
     int numberOfItems = 0;
     MenuItem[] menuItems;
@@ -22,7 +22,8 @@ public class TelepizzaMenu {
         }
     }
 
-    public Iterator createIterator() {
-            return new PizzasMenuIterator(menuItems);
+    public java.util.Iterator createIterator() {
+        return new PizzasMenuIterator(menuItems);
     }
+
 }

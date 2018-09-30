@@ -1,8 +1,9 @@
 package menutestiterator;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
-public class McDonaldsMenu {
+public class McDonaldsMenu implements Menu {
     ArrayList<MenuItem> menuItems;
 
     public McDonaldsMenu() {
@@ -22,6 +23,7 @@ public class McDonaldsMenu {
     }
 
     public Iterator createIterator() {
-        return new HamburguesasMenuIterator(menuItems);
+        return menuItems.iterator();
     }
+
 }
